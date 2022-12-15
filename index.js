@@ -1,44 +1,44 @@
-function Tinhtien(){
+function tinhTienThue(){
     var hoTenEL=document.getElementById("hoten").value;
     var tongThuNhap=document.getElementById("tong-thu-nhap").value*1;
     var soNguoiPhuThuoc=document.getElementById("phu-thuoc").value*1;
-    var Thunhapchiuthue=document.value*1;
+    var thuNhapChiuThue=document.value*1;
 
-    Thunhapchiuthue=tongThuNhap-4e6-soNguoiPhuThuoc*16e5;
+    thuNhapChiuThue=tongThuNhap-4e6-soNguoiPhuThuoc*16e5;
 
-    var Tinhtienthue=document.value*1;
+    var tinhTienThueEL=document.value*1;
 
 
-    Tinhtienthue=0;
+    tinhTienThueEL=0;
 
-    if(0<Thunhapchiuthue && Thunhapchiuthue<=6e7){
-        Tinhtienthue=Thunhapchiuthue*0.05;
-        document.getElementById("tt").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${Tinhtienthue} VNĐ  </h2>`
+    if(0<thuNhapChiuThue && thuNhapChiuThue<=6e7){
+        tinhTienThueEL=thuNhapChiuThue*0.05;
+        document.getElementById("tinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${tinhTienThueEL} VNĐ  </h2>`
     }
     
-    else if(6e7<Thunhapchiuthue && Thunhapchiuthue<=12e7){
-        Tinhtienthue=Thunhapchiuthue*0.1;
-        document.getElementById("tt").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${Tinhtienthue} VNĐ  </h2>`
+    else if(6e7<thuNhapChiuThue && thuNhapChiuThue<=12e7){
+        tinhTienThueEL=thuNhapChiuThue*0.1;
+        document.getElementById("tinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${tinhTienThueEL} VNĐ  </h2>`
     }
-    else if(12e7<Thunhapchiuthue && Thunhapchiuthue<=21e7){
-        Tinhtienthue=Thunhapchiuthue*0.15;
-        document.getElementById("tt").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${Tinhtienthue} VNĐ  </h2>`
+    else if(12e7<thuNhapChiuThue && thuNhapChiuThue<=21e7){
+        tinhTienThueEL=thuNhapChiuThue*0.15;
+        document.getElementById("tinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${tinhTienThueEL} VNĐ  </h2>`
     }
-    else if(21e7<Thunhapchiuthue && Thunhapchiuthue<=384e6){
-        Tinhtienthue=Thunhapchiuthue*0.2;
-        document.getElementById("tt").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${Tinhtienthue} VNĐ  </h2>`
+    else if(21e7<thuNhapChiuThue && thuNhapChiuThue<=384e6){
+        tinhTienThueEL=thuNhapChiuThue*0.2;
+        document.getElementById("tinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${tinhTienThueEL} VNĐ  </h2>`
     }
-    else if(384e6<Thunhapchiuthue && Thunhapchiuthue<=624e6){
-        Tinhtienthue=Thunhapchiuthue*0.25;
-        document.getElementById("tt").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${Tinhtienthue} VNĐ  </h2>`
+    else if(384e6<thuNhapChiuThue && thuNhapChiuThue<=624e6){
+        tinhTienThueEL=thuNhapChiuThue*0.25;
+        document.getElementById("tinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${tinhTienThueEL} VNĐ  </h2>`
     }
-    else if(624e6<Thunhapchiuthue && Thunhapchiuthue<=96e7){
-        Tinhtienthue=Thunhapchiuthue*0.3;
-        document.getElementById("tt").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${Tinhtienthue} VNĐ  </h2>`
+    else if(624e6<thuNhapChiuThue && thuNhapChiuThue<=96e7){
+        tinhTienThueEL=thuNhapChiuThue*0.3;
+        document.getElementById("tinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${tinhTienThueEL} VNĐ  </h2>`
     }
     else{
-        Tinhtienthue=Thunhapchiuthue*0.35;
-        document.getElementById("tt").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${Tinhtienthue} VNĐ  </h2>`
+        tinhTienThueEL=thuNhapChiuThue*0.35;
+        document.getElementById("tinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${hoTenEL} , số tiền thuế phải trả là ${tinhTienThueEL} VNĐ  </h2>`
     }
     
 }
@@ -46,7 +46,7 @@ function Tinhtien(){
 
 /**Bài 2 */
 
-function Andi(){
+function anDi(){
 var option = document.getElementById('loaikhachhang').value;
 
 var connect = document.getElementById('connect')
@@ -58,24 +58,24 @@ var connect = document.getElementById('connect')
     }
    
 }
-function Tinhtiencap(){
-    var Loaikhachhang=document.getElementById("loaikhachhang").value;
-    var Makhachhang=document.getElementById("maKH").value;
-    var Sokenhcaocap=document.getElementById("SoKenh").value*1;
-    var Soketnoi=document.getElementById("connect").value*1;
-    var Tinhtien=document.value;
+function tinhTienCap(){
+    var loaiKhachHang=document.getElementById("loaikhachhang").value;
+    var maKhachHang=document.getElementById("maKH").value;
+    var soKenhCaoCap=document.getElementById("SoKenh").value*1;
+    var soKetNoi=document.getElementById("connect").value*1;
+    var tinhTien=document.value;
 
-    if(Loaikhachhang==="user"){
-        Tinhtien=4.5+20.5+7.5*Sokenhcaocap;
-        document.getElementById("tinhtiencap").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${Makhachhang} , số tiền cáp phải trả là ${Tinhtien} $  </h2>`
+    if(loaiKhachHang==="user"){
+        tinhTien=4.5+20.5+7.5*soKenhCaoCap;
+        document.getElementById("resultTinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${maKhachHang} , số tiền cáp phải trả là ${tinhTien} $  </h2>`
     }
-    else if(Loaikhachhang==="company" && Soketnoi<=10){
-        Tinhtien=15+75+Soketnoi*0+50*Sokenhcaocap;
-        document.getElementById("tinhtiencap").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${Makhachhang} , số tiền cáp phải trả là ${Tinhtien} $  </h2>`
+    else if(loaiKhachHang==="company" && soKetNoi<=10){
+        tinhTien=15+75+soKetNoi*0+50*soKenhCaoCap;
+        document.getElementById("resultTinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${maKhachHang} , số tiền cáp phải trả là ${tinhTien} $  </h2>`
     }
-    else if(Loaikhachhang==="company" && Soketnoi>10){
-        Tinhtien=15+75+(Soketnoi-10)*5+50*Sokenhcaocap;
-        document.getElementById("tinhtiencap").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${Makhachhang} , số tiền cáp phải trả là ${Tinhtien} $  </h2>`
+    else if(loaiKhachHang==="company" && soKetNoi>10){
+        tinhTien=15+75+(soKetNoi-10)*5+50*soKenhCaoCap;
+        document.getElementById("resultTinhTien").innerHTML=`<h2 class="mt-5 text-danger text-center">Họ tên là: ${maKhachHang} , số tiền cáp phải trả là ${tinhTien} $  </h2>`
     }
 
 }
